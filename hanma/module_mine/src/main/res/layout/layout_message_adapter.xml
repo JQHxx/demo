@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp">
+
+    <LinearLayout
+        android:id="@+id/message_ll_delete"
+        android:layout_width="97dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/radius10_solid_main_clolor_ff3dcfff_no_stroke"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/message_delete" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message_ll_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_5_solid_white_stroke_d2d2d2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/message_iv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/message_iv_status_ml"
+                    android:src="@mipmap/message_red_point" />
+
+                <TextView
+                    android:id="@+id/message_tv_title"
+                    style="@style/common_tv_black_333333_ts_15"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/message_tv_content"
+                style="@style/common_tv_tc_66666_sz_12"
+                android:layout_marginBottom="@dimen/message_tv_content_mb"
+                android:layout_marginEnd="@dimen/message_tv_content_mr"
+                android:layout_marginStart="@dimen/message_tv_content_ml"
+                android:layout_marginTop="@dimen/message_tv_content_mt"
+                android:maxLines="3"
+                android:text="22222222222" />
+
+
+            <RelativeLayout
+                android:id="@+id/message_rl_detail_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/message_rl_detail_pb"
+                android:paddingTop="@dimen/message_rl_detail_pt">
+
+                <TextView
+                    android:id="@+id/message_tv_time"
+                    style="@style/common_tv_d2d2d2_ts_12"
+                    android:layout_marginStart="@dimen/message_tv_content_ml"
+                    android:text="2019-11-30 12:44:33" />
+
+                <ImageView
+                    android:id="@+id/message_iv_detail_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/message_iv_detail_mr"
+                    android:src="@mipmap/message_right_arrow" />
+
+                <TextView
+                    android:id="@+id/message_tv_detail"
+                    style="@style/common_tc_ff943d_ts_14"
+                    android:layout_marginEnd="@dimen/message_tv_detail_mr"
+                    android:layout_toStartOf="@+id/message_iv_detail_arrow"
+                    android:text="@string/message_tv_detail_tx" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>

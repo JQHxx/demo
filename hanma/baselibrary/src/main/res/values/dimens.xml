@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--common-->
+    <dimen name="common_text_size">18dp</dimen>
+    <dimen name="common_tv_gray_wd">130dp</dimen>
+    <dimen name="common_tv_gray_ht">32dp</dimen>
+    <dimen name="common_tv_ts_10">10sp</dimen>
+    <dimen name="common_tv_ts_11">11sp</dimen>
+    <dimen name="common_tv_ts_12">12sp</dimen>
+    <dimen name="common_tv_ts_13">13sp</dimen>
+    <dimen name="common_tv_ts_14">14sp</dimen>
+    <dimen name="common_tv_ts_15">15sp</dimen>
+    <dimen name="common_tv_ts_16">16sp</dimen>
+    <dimen name="common_tv_ts_18">18sp</dimen>
+    <dimen name="common_tv_ts_20">20sp</dimen>
+    <dimen name="common_tv_ts_21">21sp</dimen>
+    <dimen name="common_tv_ts_24">24sp</dimen>
+
+    <!--radius-->
+    <dimen name="radius_ev_color">5dp</dimen>
+
+    <!--base_title-->
+    <dimen name="base_title__ht">53dp</dimen>
+    <dimen name="base_title_pt">20dp</dimen>
+    <dimen name="base_title_iv_left_wt">27dp</dimen>
+    <dimen name="base_title_iv_left_ht">19dp</dimen>
+    <dimen name="base_title_iv_left_ml">21dp</dimen>
+    <dimen name="base_title_tv_center_wt">117dp</dimen>
+    <dimen name="base_title_tv_center_ts">18sp</dimen>
+    <dimen name="base_title_iv_right_mr">12dp</dimen>
+    <dimen name="base_title_tv_right_ts">18sp</dimen>
+    <dimen name="base_title_iv_right_wd">21dp</dimen>
+    <dimen name="base_title_iv_right_ht">19dp</dimen>
+    <dimen name="base_title_iv_note_wd">19dp</dimen>
+    <dimen name="base_title_iv_note_mr">8dp</dimen>
+
+    <!--login-->
+    <dimen name="login_iv_head_portrait_w">106dp</dimen>
+    <dimen name="login_iv_head_portrait_mt">73dp</dimen>
+    <dimen name="login_bt_height">44dp</dimen>
+    <dimen name="login_ll_ht">390dp</dimen>
+    <dimen name="login_ll_ml">35dp</dimen>
+    <dimen name="login_ll_mr">35dp</dimen>
+    <dimen name="login_ll_mt">20dp</dimen>
+    <dimen name="login_ll_pl">23dp</dimen>
+    <dimen name="login_ll_pr">23dp</dimen>
+    <dimen name="login_et_username_ht">36dp</dimen>
+    <dimen name="login_et_username_mt">36dp</dimen>
+    <dimen name="login_et_username_dp">12dp</dimen>
+    <dimen name="login_et_username_pl">16dp</dimen>
+    <dimen name="login_et_psw_mt">20dp</dimen>
+    <dimen name="login_tv_login_mt">48dp</dimen>
+    <dimen name="login_ll_third_party_hint_mt">57dp</dimen>
+    <dimen name="login_tv_third_party_line_wd">69dp</dimen>
+    <dimen name="login_tv_third_party_line_ht">1dp</dimen>
+    <dimen name="login_tv_third_party_hint_ml">16dp</dimen>
+    <dimen name="login_tv_third_party_hint_mr">16dp</dimen>
+    <dimen name="login_ll_third_party_mt">29dp</dimen>
+    <dimen name="login_iv_we_chat_mr">80dp</dimen>
+    <dimen name="login_rl_mt">16dp</dimen>
+
+    <!--register-->
+    <dimen name="register_tv_send_code_mt">5dp</dimen>
+    <dimen name="register_tv_send_code_mb">5dp</dimen>
+    <dimen name="register_tv_register_mt">36dp</dimen>
+    <dimen name="register_cb_agree_dp">4dp</dimen>
+    <dimen name="register_ll_agree_mt">20dp</dimen>
+    <dimen name="register_title_mb">23dp</dimen>
+    <dimen name="register_title_mt">24dp</dimen>
+    <dimen name="register_title_ts">21sp</dimen>
+
+
+    <!--bind_phone-->
+    <dimen name="bind_phone_iv_head_portrait_mt">25dp</dimen>
+    <dimen name="bind_phone_iv_head_portrait_mb">29dp</dimen>
+    <dimen name="bind_phone_ll_pl">58dp</dimen>
+    <dimen name="bind_phone_ll_pr">58dp</dimen>
+    <dimen name="bind_phone_et_verification_code_mt">17dp</dimen>
+
+    <!--search-->
+    <dimen name="search_tv_search_ht">28dp</dimen>
+    <dimen name="search_tv_search_ml">28dp</dimen>
+    <dimen name="search_tv_search_pd">12dp</dimen>
+    <dimen name="search_iv_msg_wd">24dp</dimen>
+    <dimen name="search_iv_msg_mr">20dp</dimen>
+    <dimen name="search_iv_msg_ml">18dp</dimen>
+
+    <!--home-->
+    <dimen name="home_banner_ht">180dp</dimen>
+    <dimen name="home_banner_ic_wd">8dp</dimen>
+    <dimen name="home_rambling_set_line_wd">2dp</dimen>
+    <dimen name="home_rambling_set_title_line_ht">20dp</dimen>
+    <dimen name="home_rambling_set_title_ml">4dp</dimen>
+    <dimen name="home_rambling_set_line_ml">20dp</dimen>
+    <dimen name="home_rambling_set_more_arrow_ml">4dp</dimen>
+    <dimen name="home_rambling_set_more_arrow_mr">16dp</dimen>
+    <dimen name="home_rambling_set_rl_pb">8dp</dimen>
+    <dimen name="home_rambling_set_rl_pt">16dp</dimen>
+    <dimen name="home_rambling_set_adapter_ll">8dp</dimen>
+    <dimen name="home_rambling_set_adapter_pl">10dp</dimen>
+    <dimen name="home_rambling_set_adapter_pr">10dp</dimen>
+    <dimen name="home_rambling_set_adapter_pt">8dp</dimen>
+    <dimen name="home_rambling_set_adapter_iv_play_wd">23dp</dimen>
+    <dimen name="home_rambling_set_adapter_iv_play_ht">23dp</dimen>
+    <dimen name="home_rambling_set_adapter_tv_number_ml">6dp</dimen>
+    <dimen name="home_rambling_set_adapter_tv_title_ml">2dp</dimen>
+    <dimen name="home_rambling_set_adapter_iv_detail_wd">17dp</dimen>
+    <dimen name="home_rambling_set_adapter_iv_detail_ht">17dp</dimen>
+    <dimen name="home_rambling_set_recycler_view_ml">16dp</dimen>
+    <dimen name="home_rambling_set_recycler_view_el">2dp</dimen>
+    <dimen name="home_rambling_set_recycler_view_rd">10dp</dimen>
+
+    <!--single_class-->
+    <dimen name="single_class_iv_img_ht">92dp</dimen>
+    <dimen name="single_class_ll_wd">184dp</dimen>
+    <dimen name="single_class_ll_ht">179dp</dimen>
+    <dimen name="single_class_ll__ml">12dp</dimen>
+    <dimen name="single_class_recycler_view_pt">8dp</dimen>
+    <dimen name="single_class_mt">5dp</dimen>
+    <dimen name="single_class_mb">5dp</dimen>
+    <dimen name="single_class_el">2dp</dimen>
+
+    <!--special_class-->
+    <dimen name="special_class_pe">26dp</dimen>
+    <dimen name="special_class_mb">15dp</dimen>
+    <dimen name="special_class_ht">79dp</dimen>
+    <dimen name="special_class_iv_img_wd">100dp</dimen>
+    <dimen name="special_class_iv_img_ht">75dp</dimen>
+    <dimen name="special_class_ll_ml">10dp</dimen>
+
+    <!--message-->
+    <dimen name="message_tv_time_ht">20dp</dimen>
+    <dimen name="message_tv_time_pl">23dp</dimen>
+    <dimen name="message_tv_time_pr">23dp</dimen>
+    <dimen name="message_iv_status_ml">6dp</dimen>
+    <dimen name="message_tv_content_mb">19dp</dimen>
+    <dimen name="message_tv_content_ml">10dp</dimen>
+    <dimen name="message_tv_content_mr">10dp</dimen>
+    <dimen name="message_tv_content_mt">12dp</dimen>
+    <dimen name="message_tv_line_ml">6dp</dimen>
+    <dimen name="message_tv_line_mr">6dp</dimen>
+    <dimen name="message_rl_detail_pb">8dp</dimen>
+    <dimen name="message_rl_detail_pt">8dp</dimen>
+    <dimen name="message_tv_detail_mr">4dp</dimen>
+    <dimen name="message_iv_detail_mr">7dp</dimen>
+    <dimen name="message_ll_mt">12dp</dimen>
+    <dimen name="message_detail_tv_time_mt">12dp</dimen>
+    <dimen name="message_detail_ll_mt">12dp</dimen>
+    <dimen name="message_detail_iv_img_wd">44dp</dimen>
+    <dimen name="message_detail_iv_img_ht">44dp</dimen>
+    <dimen name="message_detail_iv_img_ms">16dp</dimen>
+    <dimen name="message_detail_iv_img_me">6dp</dimen>
+    <dimen name="message_detail_ll_title_pe">8dp</dimen>
+    <dimen name="message_detail_ll_title_ps">8dp</dimen>
+    <dimen name="message_recycler_view_ht">16dp</dimen>
+    <dimen name="message_recycler_view_mr">16dp</dimen>
+
+
+</resources>

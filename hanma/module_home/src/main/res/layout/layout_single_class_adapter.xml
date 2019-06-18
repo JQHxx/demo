@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/single_class_ll__ml"
+    android:layout_marginTop="@dimen/single_class_mt"
+    android:layout_marginBottom="@dimen/single_class_mb"
+    android:background="@drawable/radius_10_solid_white_no_stroke"
+    android:elevation="@dimen/single_class_el">
+
+    <LinearLayout
+        android:layout_width="@dimen/single_class_ll_wd"
+        android:layout_height="@dimen/single_class_ll_ht"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/single_class_iv_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/single_class_iv_img_ht" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/single_class_ll_ml"
+            android:layout_marginRight="@dimen/single_class_ll_mr"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/single_class_tv_title"
+                style="@style/common_tv_black_333333_ts_15"
+                android:lines="1"
+                android:layout_marginTop="2dp"
+                />
+
+            <TextView
+                android:id="@+id/single_class_tv_author"
+                style="@style/common_tv_tc_66666_sz_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/single_class_tv_title"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/single_class_tv_time"
+                style="@style/common_tv_gray_99999_ts_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/single_class_tv_sale_num"
+                android:lines="1"
+                android:layout_marginBottom="2dp"
+                />
+
+
+            <wenran.com.baselibrary.base.widget.NoPaddingTv
+                android:id="@+id/single_class_tv_sale_num"
+                style="@style/common_tv_gray_99999_tsl_11"
+                android:layout_alignBottom="@+id/single_class_tv_price"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:layout_marginBottom="12dp"
+                />
+
+            <wenran.com.baselibrary.base.widget.NoPaddingTv
+                android:id="@+id/single_class_tv_price"
+                style="@style/common_tc_ff943d_ts_21"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:layout_marginBottom="9dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

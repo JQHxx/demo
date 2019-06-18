@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--common-->
+    <color name="main_color">#ff3dcfff</color>
+    <color name="common_tv_transparent">#00000000</color>
+    <color name="common_et_black_3333333">#333333</color>
+    <color name="common_et_hint_gray_999999">#999999</color>
+    <color name="common_tv_tc_blue_27caff">#27CAFF</color>
+    <color name="common_tv_tc_yellow_ffa632">#FFA632</color>
+    <color name="common_tv_tc_ff943d">#FF943D</color>
+    <color name="common_tv_tc_gray_99999">#999999</color>
+    <color name="common_tv_tc_666666">#666666</color>
+    <color name="common_tv_tc_fffefefe">#fffefefe</color>
+    <color name="common_tc_ffd2d2d2">#ffd2d2d2</color>
+
+    <!--standard-->
+    <color name="standard_tv_white_ffffff">#FFFFFF</color>
+
+
+    <!--mix-->
+    <color name="gray_e4e4e4">#e4e4e4</color>
+    <color name="bottom_nav_gray_b7b7b7">#b7b7b7</color>
+
+
+    <!--login-->
+    <color name="login_tv_third_party_line_bg">#ffe9e9e9</color>
+
+    <!--register-->
+    <color name="register_title_tc">#333333</color>
+    <color name="base_title_tv_center_tc">#F3F3F3</color>
+    <color name="base_title_tv_right_tc">#FF0101</color>
+
+
+</resources>

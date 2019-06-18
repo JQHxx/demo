@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.RamblingSetMoreActivity">
+
+    <include
+        android:id="@+id/rambling_set_more_include"
+        layout="@layout/layout_base_title" />
+
+    <LinearLayout
+        android:id="@+id/rambling_set_more_content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rambling_set_more_include"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/rambling_set_more_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_banner_ht"
+            android:visibility="gone"
+            app:indicator_height="@dimen/home_banner_ic_wd"
+            app:indicator_width="@dimen/home_banner_ic_wd" />
+
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:srlAccentColor="@color/common_tv_transparent"
+            app:srlEnableAutoLoadMore="false"
+            app:srlEnablePreviewInEditMode="false"
+            app:srlEnableRefresh="false"
+            app:srlPrimaryColor="@color/common_tv_transparent">
+
+            <com.scwang.smartrefresh.header.DeliveryHeader
+                android:id="@+id/fresh_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/rambling_set_more_nsv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/rambling_set_more_rl_ml"
+                        android:layout_marginTop="@dimen/rambling_set_more_rl_mt"
+                        android:layout_marginBottom="@dimen/rambling_set_more_rl_mb"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            style="@style/common_tv_black_333333_ts_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rambling_set_tv_tx" />
+
+                        <ImageView
+                            android:id="@+id/rambling_set_iv_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/rambling_set_tv_order"
+                            android:src="@mipmap/rambling_set_order_desc" />
+
+                        <TextView
+                            android:id="@+id/rambling_set_tv_order"
+                            style="@style/common_tv_black_333333_ts_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="@dimen/rambling_set_tv_order_ml"
+                            android:layout_marginRight="@dimen/rambling_set_tv_order_mr"
+                            android:text="@string/rambling_set_tv_order_desc_tx" />
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/home_rambling_set_more_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/home_rambling_set_more_recycler_view_mr"
+                        android:elevation="@dimen/home_rambling_set_recycler_view_el" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:id="@+id/fresh_foot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

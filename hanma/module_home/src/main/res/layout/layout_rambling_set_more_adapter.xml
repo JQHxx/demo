@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/rambling_set_more_mb">
+
+    <ImageView
+        android:id="@+id/rambling_set_more_iv_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/rambling_set_square" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:background="@drawable/radius_10_solid_white_no_stroke"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/rambling_set_square_ll_pl"
+        android:paddingRight="@dimen/rambling_set_square_ll_pr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rambling_set_square_ll_mt"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rambling_set_more_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/rambling_set_more_tv_studying"
+                style="@style/common_tv_white_ffffff_ts_10"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/rambling_set_more_studying_bg"
+                android:text="@string/rambling_set_square_tv_studying" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rambling_set_more_ll_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rambling_set_more_ll_time_mt"
+            android:layout_marginBottom="@dimen/rambling_set_more_ll_time_mb"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rambling_set_more_tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/rambling_set_more_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/rambling_set_more_tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/rambling_set_more_tv_progress_ml"
+                android:layout_weight="1"
+                android:lines="1" />
+
+
+            <ImageView
+                android:id="@+id/rambling_set_more_iv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/rambling_set_more_iv_play_mr"
+                android:src="@mipmap/home_rambling_set_play" />
+
+            <ImageView
+                android:id="@+id/rambling_set_more_iv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/home_rambling_set_detail" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

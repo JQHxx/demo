@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+def config = rootProject.ext
+def dependenciesDef = config.dependencies
+android {
+    compileSdkVersion config.android.compileSdkVersion
+    buildToolsVersion config.android.buildToolsVersion
+    signingConfigs {
+        configsign {
+            keyAlias 'crowhine'
+            keyPassword 'wu123456'
+            storeFile file('C:/Users/crowhine/AndroidStudioProjects/hanma/wenran.jks')
+            storePassword 'wu123456'
+        }
+    }
+    defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+        applicationId "com.wenran.wenran"
+        minSdkVersion config.android.minSdkVersion
+        targetSdkVersion config.android.targetSdkVersion
+        versionCode config.android.versionCode
+        versionName config.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+//            // 不显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "false"
+//            //混淆
+//            minifyEnabled true
+//            //Zipalign优化
+//            zipAlignEnabled true
+//
+//            // 移除无用的resource文件
+//            shrinkResources true
+//            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.configsign
+        }
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+
+            // 移除无用的resource文件
+            shrinkResources true
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            //签名
+            signingConfig signingConfigs.configsign
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        jumboMode = true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    api dependenciesDef.junit
+    api dependenciesDef.runner
+    api dependenciesDef.espresso
+    api dependenciesDef.constraint
+    api dependenciesDef.v7
+
+    implementation project(':baselibrary')
+    implementation dependenciesDef.butterknife
+    annotationProcessor dependenciesDef.butterknifecompiler
+    implementation dependenciesDef.ahbottomnavigation
+    implementation dependenciesDef.SmartRefreshLayout
+    implementation dependenciesDef.SmartRefreshHeader
+    implementation files('libs/umeng-common-2.0.1.jar')
+    implementation files('libs/umeng-share-core-6.9.4.jar')
+    implementation files('libs/umeng-share-wechat-simplify-6.9.4.jar')
+    implementation files('libs/umeng-shareboard-widget-6.9.4.jar')
+    implementation files('libs/umeng-sharetool-6.9.4.jar')
+    implementation dependenciesDef.arouter
+    annotationProcessor dependenciesDef.aroutercompiler
+    implementation dependenciesDef.multidex
+    // app支付，添加下面的内容
+    implementation (name: 'alipaySdk-15.6.2-20190416165036', ext: 'aar')
+    //在壳中，导入各业务组件即可。
+    if (!isHomeApp.toBoolean()) {
+        implementation project(':module_home')
+    }
+    if (!isStoreApp.toBoolean()) {
+        implementation project(':module_store')
+    }
+    if (!isMineApp.toBoolean()) {
+        implementation project(':module_mine')
+    }
+    if (!isPlayerApp.toBoolean()) {
+        implementation project(':module_player')
+    }
+}

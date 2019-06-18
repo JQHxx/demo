@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.CourseExplainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_base_title" />
+
+    <ScrollView
+        android:id="@+id/course_explain_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/course_explain_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_banner_ht"
+                app:indicator_height="@dimen/home_banner_ic_wd"
+                app:indicator_width="@dimen/home_banner_ic_wd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/course_explain_ll_ml"
+                android:layout_marginRight="@dimen/course_explain_ll_mr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/course_explain_tv_title"
+                    style="@style/common_tv_black_3333333_ts_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/course_explain_tv_title_mt"
+                    android:layout_marginBottom="@dimen/course_explain_tv_author_mt" />
+
+                <TextView
+                    android:id="@+id/course_explain_tv_author"
+                    style="@style/common_tv_tc_66666_sz_12" />
+
+                <LinearLayout
+                    android:id="@+id/course_explain_ll_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/course_explain_ll_player_ht"
+                    android:background="@color/gray_e4e4e4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/course_explain_iv_play_control"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="18dp"
+                        android:src="@mipmap/course_explain_play" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/course_explain_tv_title2"
+                            style="@style/common_tv_black_333333_ts_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/course_explain_tv_author2"
+                            style="@style/common_tv_gray_99999_ts_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/course_explain_tv_title2"
+                            android:layout_alignLeft="@+id/course_explain_tv_title2"
+                            android:layout_marginRight="13dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/course_explain_tv_total_time"
+                            style="@style/common_tv_gray_99999_ts_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/course_explain_tv_title2"
+
+                            android:layout_toRightOf="@+id/course_explain_tv_author2"
+                            android:text="" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/common_tv_d2d2d2_ts_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/course_explain_hint" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/course_explain_v_line_mt"
+                    android:layout_marginBottom="@dimen/course_explain_v_line_mb"
+                    android:background="@color/line_bg_cl" />
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/course_explain_wv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></WebView>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/layout_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

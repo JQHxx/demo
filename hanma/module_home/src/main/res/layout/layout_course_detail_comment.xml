@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/standard_tv_white_ffffff"
+    >
+
+    <include
+        android:id="@+id/course_detail_course_comment_title"
+        layout="@layout/layout_base_title" />
+
+    <EditText
+        android:id="@+id/course_detail_comment_et"
+        style="@style/common_tv_black_333333_ts_14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/course_detail_comment_et_ht"
+        android:gravity="start"
+        android:hint="留下您的评价或言论，将由作者筛选后显示。" />
+</LinearLayout>

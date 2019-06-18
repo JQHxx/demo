@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base_title__ht"
+    android:background="@color/main_color"
+    android:gravity="center_vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/search_et_search"
+        style="@style/search_input_style"
+        android:hint="@string/search_ht" />
+
+    <TextView
+        style="@style/common_tv_white_ffffff_ts_14"
+        android:id="@+id/search_tv_cancel"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/cancel" />
+
+</LinearLayout>

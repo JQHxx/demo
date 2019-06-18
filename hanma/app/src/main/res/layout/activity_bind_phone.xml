@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.login.view.BindPhoneActivity">
+
+    <include layout="@layout/layout_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/bind_phone_ll_pl"
+        android:paddingRight="@dimen/bind_phone_ll_pr">
+
+        <ImageView
+            android:id="@+id/bind_phone_iv_head_portrait"
+            android:layout_width="@dimen/login_iv_head_portrait_w"
+            android:layout_height="@dimen/login_iv_head_portrait_w"
+            android:layout_marginTop="@dimen/bind_phone_iv_head_portrait_mt"
+            android:layout_marginBottom="@dimen/bind_phone_iv_head_portrait_mb"
+            android:src="@mipmap/login_default_head_portrait" />
+
+        <EditText
+            android:id="@+id/bind_phone_et_username"
+            style="@style/login_et_style"
+            android:drawableLeft="@mipmap/login_user_name"
+            android:focusedByDefault="false"
+            android:hint="@string/login_et_username_ht"
+            android:inputType="phone" />
+
+
+        <EditText
+            android:id="@+id/bind_phone_et_verification_code"
+            style="@style/login_et_style"
+            android:layout_marginTop="@dimen/bind_phone_et_verification_code_mt"
+            android:drawableLeft="@mipmap/register_et_verification_code"
+            android:focusedByDefault="false"
+            android:hint="@string/register_et_verification_code_ht"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/bind_phone_tv_send_code"
+            style="@style/common_tv_yellow_ffa632_ts_11"
+            android:layout_gravity="end"
+            android:layout_marginBottom="@dimen/register_tv_send_code_mb"
+            android:layout_marginTop="@dimen/register_tv_send_code_mt"
+            android:text="@string/register_tv_send_code_tt" />
+
+        <TextView
+            android:id="@+id/bind_phone_tv_bind"
+            style="@style/commit_tv_gray_ffd2d2d2_ts_20_style"
+            android:layout_marginTop="65dp"
+            android:enabled="false"
+            android:text="@string/bind_phone_tv_bind_tt" />
+    </LinearLayout>
+</LinearLayout>

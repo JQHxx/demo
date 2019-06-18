@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/hot_search_ll_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hot_search_ll_history_mt"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            style="@style/common_tv_gray_99999_ts_14"
+            android:layout_marginLeft="@dimen/search_hot_ml"
+            android:text="@string/hot_search_ll_history_tv" />
+
+        <me.gujun.android.taggroup.TagGroup
+            android:id="@+id/hot_search_tl_history"
+            style="@style/TagGroup"
+            android:layout_width="match_parent"
+            app:atg_borderStrokeWidth="0dp"
+            app:atg_borderColor="@color/main_color"
+            app:atg_textSize="@dimen/hot_search_tl_hot_search_ts"
+            app:atg_textColor="@color/common_et_black_3333333"
+            app:atg_backgroundColor="@color/common_bg_cl_gray_fff0f0f0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/search_hot_ml"
+            android:layout_marginTop="@dimen/hot_search_tl_history_mt"
+            android:layout_marginRight="@dimen/search_hot_ml"
+            android:layout_marginBottom="@dimen/hot_search_tl_history_mb" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/common_bg_cl_gray_fff0f0f0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hot_search_ll_hot_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hot_search_ll_hot_search_mt"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            style="@style/common_tv_gray_99999_ts_14"
+            android:layout_marginLeft="@dimen/search_hot_ml"
+            android:text="@string/hot_search_tv_hot_search" />
+
+
+        <me.gujun.android.taggroup.TagGroup
+            android:id="@+id/hot_search_tl_hot_search"
+            style="@style/TagGroup"
+            android:layout_width="match_parent"
+            app:atg_borderStrokeWidth="0dp"
+            app:atg_borderColor="@color/main_color"
+            app:atg_textSize="@dimen/hot_search_tl_hot_search_ts"
+            app:atg_textColor="@color/common_et_black_3333333"
+            app:atg_backgroundColor="@color/common_bg_cl_gray_fff0f0f0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/search_hot_ml"
+            android:layout_marginTop="@dimen/hot_search_tl_history_mt"
+            android:layout_marginRight="@dimen/search_hot_ml"
+            android:layout_marginBottom="@dimen/hot_search_tl_history_mb" />
+
+    </LinearLayout>
+
+</LinearLayout>

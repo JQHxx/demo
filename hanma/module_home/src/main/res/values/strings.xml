@@ -1,0 +1,47 @@
+<resources>
+    <!--common_hint-->
+
+    <!--base title-->
+    <string name="base_title_tv_right_tt">留言</string>
+
+    <!--bind phone-->
+    <string name="bind_phone_tv_bind_tt">立即绑定</string>
+    <string name="home">首页</string>
+    <string name="shopping_cart">已购</string>
+    <string name="mine">我的</string>
+
+    <!--mix-->
+    <string name="person_bought">人已购</string>
+    <string name="author">作者：</string>
+    <string name="write_comment">写留言</string>
+
+    <!--search-->
+    <string name="search_ht">请输入关键搜索词</string>
+    <string name="home_rambling_set_title_tx">漫谈集</string>
+    <string name="home_single_class">单项课</string>
+    <string name="home_special_class_title_tx">专题课</string>
+    <string name="hot_search_tv_hot_search">热门搜索</string>
+    <string name="hot_search_ll_history_tv">历史搜索</string>
+    <string name="special_class_tv">专题课</string>
+    <string name="single_class_tv">单项课</string>
+
+    <!--rambling_set-->
+    <string name="rambling_set_tv_tx">全部</string>
+    <string name="rambling_set_tv_order_desc_tx">正序</string>
+    <string name="rambling_set_tv_order_asc_tx">倒序</string>
+    <string name="rambling_set_square_tv_studying">正在学习</string>
+    <string name="rambling_set_tx">漫谈集</string>
+    <string name="course_explain_hint">建议在wifi环境下播放</string>
+    <string name="course_explain_title">课程文本</string>
+    <string name="course_detail_tv_tx">已学习</string>
+    <string name="course_detail_tv_introduction_tv">课程简介</string>
+    <string name="course_detail_tv_intended_population_tx">适应人群</string>
+    <string name="course_detail_tv_subscription_notice_tv">订阅须知</string>
+    <string name="course_detail_tv_remark_tx">备注</string>
+    <string name="course_detail_ll_leave_word_tx">用户留言</string>
+    <string name="course_detail_hint_tx">以上留言由作者筛选显示</string>
+    <string name="course_outline_tx">课程大纲</string>
+    <string name="course_detail_adapter_tv_title_tx">（免费试听）</string>
+
+
+</resources>

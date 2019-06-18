@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".main.login.view.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/register_iv_head_portrait"
+        android:layout_width="@dimen/login_iv_head_portrait_w"
+        android:layout_height="@dimen/login_iv_head_portrait_w"
+        android:layout_marginTop="@dimen/login_iv_head_portrait_mt"
+        android:src="@mipmap/login_default_head_portrait" />
+
+    <LinearLayout style="@style/login_ll_style">
+
+        <TextView
+            android:id="@+id/register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/register_title_mb"
+            android:layout_marginTop="@dimen/register_title_mt"
+            android:text="@string/register_title_tx"
+            android:textColor="@color/register_title_tc"
+            android:textSize="@dimen/register_title_ts" />
+
+        <EditText
+            android:id="@+id/register_et_username"
+            style="@style/login_et_style"
+            android:drawableLeft="@mipmap/login_user_name"
+            android:focusedByDefault="false"
+            android:hint="@string/login_et_username_ht"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/register_et_verification_code"
+            style="@style/login_et_style"
+            android:layout_marginTop="@dimen/login_et_psw_mt"
+            android:drawableLeft="@mipmap/register_et_verification_code"
+            android:focusedByDefault="false"
+            android:hint="@string/register_et_verification_code_ht"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/register_tv_send_code"
+            style="@style/common_tv_yellow_ffa632_ts_11"
+            android:layout_gravity="end"
+            android:layout_marginBottom="@dimen/register_tv_send_code_mb"
+            android:layout_marginTop="@dimen/register_tv_send_code_mt"
+            android:text="@string/register_tv_send_code_tt" />
+
+        <EditText
+            android:id="@+id/register_et_psw"
+            style="@style/login_et_style"
+            android:drawableLeft="@mipmap/login_user_psw"
+            android:focusedByDefault="false"
+            android:hint="@string/register_et_psw_ht"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/register_et_invitation_code"
+            style="@style/login_et_style"
+            android:layout_marginTop="@dimen/login_et_psw_mt"
+            android:drawableLeft="@mipmap/register_et_invitation_code"
+            android:focusedByDefault="false"
+            android:hint="@string/register_et_invitation_code_ht"
+            android:inputType="textVisiblePassword" />
+
+
+        <TextView
+            android:id="@+id/register_tv_register"
+            style="@style/commit_tv_gray_ffd2d2d2_ts_20_style"
+            android:layout_marginTop="@dimen/register_tv_register_mt"
+            android:enabled="false"
+            android:text="@string/register_tv_register_tt" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_ll_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_ll_agree_mt"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/register_cb_agree"
+            style="@style/common_tv_white_ffffff_ts_11"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/register_cb_selected"
+            android:drawablePadding="@dimen/register_cb_agree_dp"
+            android:text="@string/register_cb_agree_tt" />
+
+        <TextView
+            android:id="@+id/register_tv_agree"
+            style="@style/common_tv_black_3333333_ts_11"
+            android:text="@string/register_tv_agree_tt" />
+
+    </LinearLayout>
+</LinearLayout>

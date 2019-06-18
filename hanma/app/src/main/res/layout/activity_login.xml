@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".main.login.view.LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_iv_head_portrait"
+        android:layout_width="@dimen/login_iv_head_portrait_w"
+        android:layout_height="@dimen/login_iv_head_portrait_w"
+        android:layout_marginTop="@dimen/login_iv_head_portrait_mt"
+        android:src="@mipmap/login_default_head_portrait" />
+
+    <LinearLayout style="@style/login_ll_style">
+
+        <EditText
+            android:id="@+id/login_et_username"
+            style="@style/login_et_style"
+            android:layout_marginTop="@dimen/login_et_username_mt"
+            android:drawableLeft="@mipmap/login_user_name"
+            android:focusedByDefault="false"
+            android:hint="@string/login_et_username_ht"
+            android:inputType="phone"
+
+            />
+
+        <EditText
+            android:id="@+id/login_et_psw"
+            style="@style/login_et_style"
+            android:layout_marginTop="@dimen/login_et_psw_mt"
+            android:drawableLeft="@mipmap/login_user_psw"
+            android:focusedByDefault="false"
+            android:hint="@string/login_et_psw_ht"
+            android:inputType="textPassword" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_rl_mt">
+
+            <TextView
+                android:id="@+id/login_tv_to_register"
+                style="@style/common_tv_blue_27caff_ts_11"
+                android:text="@string/login_tv_to_register_ht" />
+
+
+            <TextView
+                android:id="@+id/login_tv_forget_psw"
+                style="@style/common_tv_gray_99999_tsl_11"
+                android:layout_alignParentEnd="true"
+                android:text="@string/login_tv_forget_psw" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_tv_login"
+            style="@style/commit_tv_gray_ffd2d2d2_ts_20_style"
+            android:layout_marginTop="@dimen/login_tv_login_mt"
+            android:enabled="false"
+            android:text="@string/login_tv_login"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_ll_third_party_hint_mt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/login_tv_third_party_line_wd"
+                android:layout_height="@dimen/login_tv_third_party_line_ht"
+                android:background="@color/login_tv_third_party_line_bg" />
+
+            <TextView
+                style="@style/common_tv_gray_99999_tsl_11"
+                android:layout_marginLeft="@dimen/login_tv_third_party_hint_ml"
+                android:layout_marginRight="@dimen/login_tv_third_party_hint_mr"
+                android:text="第三方账号登录" />
+
+            <TextView
+                android:layout_width="@dimen/login_tv_third_party_line_wd"
+                android:layout_height="@dimen/login_tv_third_party_line_ht"
+                android:background="@color/login_tv_third_party_line_bg" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_ll_third_party_mt"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/login_iv_we_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/login_iv_we_chat_mr"
+                android:src="@mipmap/login_we_chat" />
+
+            <ImageView
+                android:id="@+id/login_iv_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/login_qq" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+boolean isApp = isHomeApp.toBoolean()
+if (isApp) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'org.greenrobot.greendao'
+def config = rootProject.ext
+def dependenciesDef = config.dependencies
+android {
+    compileSdkVersion config.android.compileSdkVersion
+    buildToolsVersion config.android.buildToolsVersion
+
+    defaultConfig {
+        if (isApp) {
+            applicationId "wenran.com.module.home"
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+        minSdkVersion config.android.minSdkVersion
+        targetSdkVersion config.android.targetSdkVersion
+        versionCode config.android.versionCode
+        versionName config.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            if (isApp) {
+                manifest.srcFile 'src/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    exclude '**/debug/**'
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':baselibrary')
+    implementation dependenciesDef.SmartRefreshLayout
+    implementation dependenciesDef.SmartRefreshHeader
+    implementation dependenciesDef.arouter
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    annotationProcessor dependenciesDef.aroutercompiler
+    implementation dependenciesDef.butterknife
+    annotationProcessor dependenciesDef.butterknifecompiler
+    implementation dependenciesDef.taggroup
+    implementation dependenciesDef.greendao
+    if (!isPlayerApp.toBoolean()) {
+        implementation project(':module_player')
+    }
+}

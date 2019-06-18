@@ -1,0 +1,392 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0</item>
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_up_out</item>
+    </style>
+
+
+    <declare-styleable name="SegmentedGroup">
+        <attr name="sc_corner_radius" format="dimension" />
+        <attr name="sc_border_width" format="dimension" />
+        <attr name="sc_tint_color" format="color" />
+        <attr name="sc_checked_text_color" format="color" />
+    </declare-styleable>
+
+
+    <style name="easy_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/common_tv_transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 后面的activity变暗 -->
+    </style>
+
+
+    <!--设置activity背景透明-->
+    <style name="activity_push_in_out" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- 设置没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+        <!-- 重点 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/main_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--login-->
+    <!--登录注册外部样式-->
+    <style name="login_ll_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_ll_ht</item>
+        <item name="android:layout_marginLeft">@dimen/login_ll_ml</item>
+        <item name="android:layout_marginRight">@dimen/login_ll_mr</item>
+        <item name="android:layout_marginTop">@dimen/login_ll_mt</item>
+        <item name="android:background">@drawable/radius_19_app_color_white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/login_ll_pl</item>
+        <item name="android:paddingRight">@dimen/login_ll_pr</item>
+    </style>
+
+    <!--登录注册editText样式-->
+    <style name="login_et_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_et_username_ht</item>
+        <item name="android:background">@drawable/radius19_app_color_gray_e9e9e9</item>
+        <item name="android:drawablePadding">@dimen/login_et_username_dp</item>
+        <item name="android:paddingLeft">@dimen/login_et_username_pl</item>
+        <item name="android:textColor">@color/common_et_black_3333333</item>
+        <item name="android:textColorHint">@color/common_et_hint_gray_999999</item>
+        <item name="android:textSize">@dimen/common_tv_ts_14</item>
+    </style>
+
+    <!--单项课，课程作者style-->
+    <style name="common_tv_tc_66666_sz_12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_12</item>
+        <item name="android:textColor">@color/common_tv_tc_666666</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="common_tv_tc_66666_sz_18">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_18</item>
+        <item name="android:textColor">@color/common_tv_tc_666666</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--黄色小字-->
+    <style name="common_tv_yellow_ffa632_ts_11">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_11</item>
+        <item name="android:textColor">@color/common_tv_tc_yellow_ffa632</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="common_tc_ff943d_ts_12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_12</item>
+        <item name="android:textColor">@color/common_tv_tc_ff943d</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="common_tc_ff943d_ts_14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_14</item>
+        <item name="android:textColor">@color/common_tv_tc_ff943d</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="common_tc_ff943d_ts_21">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_21</item>
+        <item name="android:textColor">@color/common_tv_tc_ff943d</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="common_tv_yellow_ffa632_ts_12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_12</item>
+        <item name="android:textColor">@color/common_tv_tc_yellow_ffa632</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--蓝色小字体-->
+    <style name="common_tv_blue_27caff_ts_11">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_11</item>
+        <item name="android:textColor">@color/common_tv_tc_blue_27caff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--灰色小字体-->
+    <style name="common_tv_gray_99999_tsl_11">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_11</item>
+        <item name="android:textColor">@color/common_tv_tc_gray_99999</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="common_tv_gray_99999_ts_12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_12</item>
+        <item name="android:textColor">@color/common_tv_tc_gray_99999</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="common_tv_gray_99999_ts_14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_14</item>
+        <item name="android:textColor">@color/common_tv_tc_gray_99999</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="common_tv_d2d2d2_ts_11">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_11</item>
+        <item name="android:textColor">@color/common_tc_ffd2d2d2</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="common_tv_d2d2d2_ts_12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_12</item>
+        <item name="android:textColor">@color/common_tc_ffd2d2d2</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="common_tv_gray_99999_ts_18">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_18</item>
+        <item name="android:textColor">@color/common_tv_tc_gray_99999</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!--黑色小字体-->
+    <style name="common_tv_black_3333333_ts_11">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_et_black_3333333</item>
+        <item name="android:textSize">@dimen/common_tv_ts_11</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="common_tv_black_333333_ts_16">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_16</item>
+        <item name="android:textColor">@color/common_et_black_3333333</item>
+    </style>
+
+    <style name="common_tv_black_333333_ts_15">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_15</item>
+        <item name="android:textColor">@color/common_et_black_3333333</item>
+    </style>
+
+    <style name="common_tv_black_333333_ts_14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_14</item>
+        <item name="android:textColor">@color/common_et_black_3333333</item>
+    </style>
+
+    <style name="common_tv_black_333333_ts_13">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_13</item>
+        <item name="android:textColor">@color/common_et_black_3333333</item>
+    </style>
+
+    <style name="common_tv_black_333333_ts_12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_et_black_3333333</item>
+        <item name="android:textSize">@dimen/common_tv_ts_12</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="common_tv_black_3333333_ts_18">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_18</item>
+        <item name="android:textColor">@color/common_et_black_3333333</item>
+    </style>
+
+
+    <style name="common_tv_white_161616_ts_18">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/comment_black_tc_161616</item>
+        <item name="android:textSize">@dimen/common_tv_ts_18</item>
+    </style>
+
+    <style name="common_tv_white_161616_ts_16">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/comment_black_tc_161616</item>
+        <item name="android:textSize">@dimen/common_tv_ts_16</item>
+    </style>
+
+
+    <!--白色小字体-->
+    <style name="common_tv_white_ffffff_ts_10">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/standard_tv_white_ffffff</item>
+        <item name="android:textSize">@dimen/common_tv_ts_10</item>
+    </style>
+
+    <style name="common_tv_white_ffffff_ts_11">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/standard_tv_white_ffffff</item>
+        <item name="android:textSize">@dimen/common_tv_ts_11</item>
+    </style>
+
+    <style name="common_tv_white_ffffff_ts_18">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/standard_tv_white_ffffff</item>
+        <item name="android:textSize">@dimen/common_tv_ts_18</item>
+    </style>
+
+
+    <!--红色-->
+    <style name="common_tv_red_F8091F_ts_14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/common_tc_f8091f</item>
+        <item name="android:textSize">@dimen/common_tv_ts_14</item>
+    </style>
+
+    <style name="common_tv_ff943d_ts_18">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/common_tc_ff943d</item>
+        <item name="android:textSize">@dimen/common_tv_ts_18</item>
+    </style>
+
+    <!--白色正常字体-->
+    <style name="common_tv_white_ffffff_ts_14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/standard_tv_white_ffffff</item>
+        <item name="android:textSize">@dimen/common_tv_ts_14</item>
+    </style>
+
+    <!--提交按钮灰色样式-->
+    <style name="commit_tv_gray_ffd2d2d2_ts_20_style">
+        <item name="android:layout_width">@dimen/common_tv_gray_wd</item>
+        <item name="android:layout_height">@dimen/common_tv_gray_ht</item>
+        <item name="android:textColor">@color/standard_tv_white_ffffff</item>
+        <item name="android:textSize">@dimen/common_tv_ts_20</item>
+        <item name="android:background">@drawable/radius16_button_gray_ffd2d2d2</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--提交按钮黄色样式-->
+    <style name="commit_tv_orange_ffffa632_ts_20_style">
+        <item name="android:layout_width">@dimen/common_tv_gray_wd</item>
+        <item name="android:layout_height">@dimen/common_tv_gray_ht</item>
+        <item name="android:textColor">@color/standard_tv_white_ffffff</item>
+        <item name="android:textSize">@dimen/common_tv_ts_20</item>
+        <item name="android:background">@drawable/radius16_button_orange_ffffa632</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--搜索输入框样式-->
+    <style name="search_input_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/search_tv_search_ht</item>
+        <item name="android:layout_marginLeft">@dimen/search_tv_search_ml</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/radius_14_app_color_white</item>
+        <item name="android:drawableLeft">@mipmap/search_search</item>
+        <item name="android:drawablePadding">@dimen/search_tv_search_pd</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/search_tv_search_pd</item>
+        <item name="android:paddingRight">@dimen/search_tv_search_pd</item>
+        <item name="android:textColor">@color/common_et_hint_gray_999999</item>
+        <item name="android:textSize">@dimen/common_tv_ts_14</item>
+    </style>
+
+    <!--消息时间展示-->
+    <style name="message_time_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/message_tv_time_ht</item>
+        <item name="android:background">@drawable/radius10_button_gray_ffd2d2d2</item>
+        <item name="android:paddingLeft">@dimen/message_tv_time_pl</item>
+        <item name="android:paddingRight">@dimen/message_tv_time_pr</item>
+        <item name="android:textColor">@color/common_tv_tc_fffefefe</item>
+    </style>
+
+    <!--没有数据提醒的蓝色字体-->
+    <style name="status_hint_blue_tc_main_color_ts_24">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">@dimen/common_tv_ts_24</item>
+    </style>
+
+
+</resources>

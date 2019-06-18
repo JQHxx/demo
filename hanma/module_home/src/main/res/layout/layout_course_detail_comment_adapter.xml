@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/comment_ll_mb"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="26dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/comment_iv_avatar"
+                android:layout_width="@dimen/comment_iv_avatar_wd"
+                android:layout_height="@dimen/comment_iv_avatar_ht"
+
+                />
+
+            <TextView
+                android:id="@+id/comment_tv_name"
+                style="@style/common_tv_white_161616_ts_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:layout_marginLeft="11dp"
+                android:text="222" />
+
+            <ImageView
+                android:id="@+id/comment_iv_like"
+                android:layout_width="@dimen/comment_iv_like_wd"
+                android:layout_height="@dimen/comment_iv_like_ht"
+                android:layout_marginRight="@dimen/comment_iv_like_mr"
+                android:src="@mipmap/comment_unlike" />
+
+            <TextView
+                android:id="@+id/comment_tv_like_count"
+                style="@style/common_tv_ff943d_ts_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/comment_tv_like_count_mr"
+                android:text="22" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/comment_tv_content"
+        style="@style/common_tv_white_161616_ts_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comment_tv_content_ml"
+        android:layout_marginRight="@dimen/comment_tv_content_mr"
+        android:layout_marginTop="8dp"
+        android:text="222" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+def config = rootProject.ext
+def dependenciesDef = config.dependencies
+android {
+    compileSdkVersion config.android.compileSdkVersion
+    buildToolsVersion config.android.buildToolsVersion
+    defaultConfig {
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME : project.getName()]
+            }
+        }
+        minSdkVersion config.android.minSdkVersion
+        targetSdkVersion config.android.targetSdkVersion
+        versionCode config.android.versionCode
+        versionName config.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'}
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api dependenciesDef.junit
+    api dependenciesDef.runner
+    api dependenciesDef.espresso
+    api dependenciesDef.constraint
+    api dependenciesDef.v7
+    api dependenciesDef.design
+
+    api dependenciesDef.retrofitretrofit
+    api dependenciesDef.retrofit2convertergson
+    api dependenciesDef.retrofit2rxjava2adapter
+    api dependenciesDef.rxjava2rxjava
+    api dependenciesDef.rxjava2rxandroid
+    api dependenciesDef.materialishprogress
+    api dependenciesDef.loadsir
+    api dependenciesDef.glidetransformations
+    api dependenciesDef.gson
+    api dependenciesDef.youthbanner
+    api dependenciesDef.eventbus
+
+    implementation dependenciesDef.arouter
+    annotationProcessor dependenciesDef.aroutercompiler
+    implementation dependenciesDef.greendao
+
+
+}

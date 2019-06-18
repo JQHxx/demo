@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--login-->
+    <!--登录注册外部样式-->
+    <style name="login_ll_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_ll_ht</item>
+        <item name="android:layout_marginLeft">@dimen/login_ll_ml</item>
+        <item name="android:layout_marginRight">@dimen/login_ll_mr</item>
+        <item name="android:layout_marginTop">@dimen/login_ll_mt</item>
+        <item name="android:background">@drawable/radius_19_app_color_white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/login_ll_pl</item>
+        <item name="android:paddingRight">@dimen/login_ll_pr</item>
+    </style>
+
+    <!--登录注册editText样式-->
+    <style name="login_et_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_et_username_ht</item>
+        <item name="android:background">@drawable/radius19_app_color_gray_e9e9e9</item>
+        <item name="android:drawablePadding">@dimen/login_et_username_dp</item>
+        <item name="android:paddingLeft">@dimen/login_et_username_pl</item>
+        <item name="android:textColor">@color/common_et_black_3333333</item>
+        <item name="android:textColorHint">@color/common_et_hint_gray_999999</item>
+        <item name="android:textSize">@dimen/common_tv_ts_14</item>
+    </style>
+
+
+
+    <!--黄色小字-->
+    <style name="common_tv_yellow_ffa632_ts_11">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_11</item>
+        <item name="android:textColor">@color/common_tv_tc_yellow_ffa632</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--蓝色小字体-->
+    <style name="common_tv_blue_27caff_ts_11">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_11</item>
+        <item name="android:textColor">@color/common_tv_tc_blue_27caff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--灰色小字体-->
+    <style name="common_tv_gray_99999_tsl_11">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_tv_ts_11</item>
+        <item name="android:textColor">@color/common_tv_tc_gray_99999</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+
+    <!--黑色小字体-->
+    <style name="common_tv_black_3333333_ts_11">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/common_et_black_3333333</item>
+        <item name="android:textSize">@dimen/common_tv_ts_11</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--白色小字体-->
+    <style name="common_tv_white_ffffff_ts_11">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/standard_tv_white_ffffff</item>
+        <item name="android:textSize">@dimen/common_tv_ts_11</item>
+    </style>
+
+
+    <!--提交按钮灰色样式-->
+    <style name="commit_tv_gray_ffd2d2d2_ts_20_style">
+        <item name="android:layout_width">@dimen/common_tv_gray_wd</item>
+        <item name="android:layout_height">@dimen/common_tv_gray_ht</item>
+        <item name="android:textColor">@color/standard_tv_white_ffffff</item>
+        <item name="android:textSize">@dimen/common_tv_ts_20</item>
+        <item name="android:background">@drawable/radius16_button_gray_ffd2d2d2</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

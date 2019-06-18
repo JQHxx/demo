@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/status_hint_no_data" />
+
+    <TextView
+        android:id="@+id/tv_empty"
+        style="@style/status_hint_blue_tc_main_color_ts_24"
+        android:layout_marginTop="25dp"
+        android:text="@string/fine_no_data" />
+
+    <TextView
+        style="@style/common_tv_gray_99999_ts_18"
+        android:layout_marginTop="15dp"
+        android:text="@string/click_me_to_retry" />
+</LinearLayout>

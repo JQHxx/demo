@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--common-->
+    <dimen name="common_text_size">18dp</dimen>
+    <dimen name="common_tv_gray_wd">130dp</dimen>
+    <dimen name="common_tv_gray_ht">32dp</dimen>
+    <dimen name="common_tv_ts_11">11sp</dimen>
+    <dimen name="common_tv_ts_12">12sp</dimen>
+    <dimen name="common_tv_ts_14">14sp</dimen>
+    <dimen name="common_tv_ts_15">15sp</dimen>
+    <dimen name="common_tv_ts_18">18sp</dimen>
+    <dimen name="common_tv_ts_20">20sp</dimen>
+    <dimen name="common_tv_ts_21">21sp</dimen>
+    <dimen name="common_tv_ts_24">24sp</dimen>
+
+    <!--radius-->
+    <dimen name="radius_ev_color">5dp</dimen>
+
+    <!--base_title-->
+    <dimen name="base_title__ht">53dp</dimen>
+    <dimen name="base_title_pt">20dp</dimen>
+    <dimen name="base_title_iv_left_wt">27dp</dimen>
+    <dimen name="base_title_iv_left_ht">19dp</dimen>
+    <dimen name="base_title_iv_left_ml">21dp</dimen>
+    <dimen name="base_title_tv_center_wt">117dp</dimen>
+    <dimen name="base_title_tv_center_ts">18sp</dimen>
+    <dimen name="base_title_iv_right_mr">12dp</dimen>
+    <dimen name="base_title_tv_right_ts">18sp</dimen>
+    <dimen name="base_title_iv_right_wd">21dp</dimen>
+    <dimen name="base_title_iv_right_ht">19dp</dimen>
+    <dimen name="base_title_iv_note_wd">19dp</dimen>
+    <dimen name="base_title_iv_note_mr">8dp</dimen>
+
+    <!--search-->
+    <dimen name="search_tv_search_ht">28dp</dimen>
+    <dimen name="search_tv_search_ml">28dp</dimen>
+    <dimen name="search_tv_search_pd">12dp</dimen>
+    <dimen name="search_iv_msg_wd">24dp</dimen>
+    <dimen name="search_iv_msg_mr">20dp</dimen>
+    <dimen name="search_iv_msg_ml">18dp</dimen>
+
+    <!--home-->
+    <dimen name="home_banner_ht">180dp</dimen>
+    <dimen name="home_banner_ic_wd">8dp</dimen>
+    <dimen name="home_rambling_set_line_wd">2dp</dimen>
+    <dimen name="home_rambling_set_title_line_ht">20dp</dimen>
+    <dimen name="home_rambling_set_title_ml">4dp</dimen>
+    <dimen name="home_rambling_set_line_ml">20dp</dimen>
+    <dimen name="home_rambling_set_more_arrow_ml">4dp</dimen>
+    <dimen name="home_rambling_set_more_arrow_mr">16dp</dimen>
+    <dimen name="home_rambling_set_rl_pb">8dp</dimen>
+    <dimen name="home_rambling_set_rl_pt">16dp</dimen>
+    <dimen name="home_rambling_set_adapter_ll">8dp</dimen>
+    <dimen name="home_rambling_set_adapter_pl">10dp</dimen>
+    <dimen name="home_rambling_set_adapter_pr">10dp</dimen>
+    <dimen name="home_rambling_set_adapter_pt">8dp</dimen>
+    <dimen name="home_rambling_set_adapter_iv_play_wd">23dp</dimen>
+    <dimen name="home_rambling_set_adapter_iv_play_ht">23dp</dimen>
+    <dimen name="home_rambling_set_adapter_tv_number_ml">6dp</dimen>
+    <dimen name="home_rambling_set_adapter_tv_title_ml">2dp</dimen>
+    <dimen name="home_rambling_set_adapter_iv_detail_wd">17dp</dimen>
+    <dimen name="home_rambling_set_adapter_iv_detail_ht">17dp</dimen>
+    <dimen name="home_rambling_set_recycler_view_ml">16dp</dimen>
+    <dimen name="home_rambling_set_recycler_view_el">2dp</dimen>
+    <dimen name="home_rambling_set_recycler_view_rd">10dp</dimen>
+
+    <!--single_class-->
+    <dimen name="single_class_iv_img_ht">92dp</dimen>
+    <dimen name="single_class_ll_wd">184dp</dimen>
+    <dimen name="single_class_ll_ht">179dp</dimen>
+    <dimen name="single_class_ll__ml">12dp</dimen>
+    <dimen name="single_class_recycler_view_pt">8dp</dimen>
+    <dimen name="single_class_mt">5dp</dimen>
+    <dimen name="single_class_mb">5dp</dimen>
+    <dimen name="single_class_el">2dp</dimen>
+
+    <!--special_class-->
+    <dimen name="special_class_pe">26dp</dimen>
+    <dimen name="special_class_mb">15dp</dimen>
+    <dimen name="special_class_ht">79dp</dimen>
+    <dimen name="special_class_iv_img_wd">100dp</dimen>
+    <dimen name="special_class_iv_img_ht">75dp</dimen>
+    <dimen name="special_class_ll_ml">10dp</dimen>
+
+    <!--search-->
+    <dimen name="hot_search_ll_history_mt">13dp</dimen>
+    <dimen name="hot_search_ll_hot_search_mt">13dp</dimen>
+    <dimen name="popup_iv_wd">13dp</dimen>
+    <dimen name="popup_iv__ht">13dp</dimen>
+    <dimen name="popup_iv_me">9dp</dimen>
+    <dimen name="popup_iv_ms">29dp</dimen>
+    <dimen name="search_result_iv_arrow_me">17dp</dimen>
+    <dimen name="search_result_iv_arrow_ms">5dp</dimen>
+    <dimen name="search_result_v_line_mt">7dp</dimen>
+    <dimen name="search_result_v_line_me">7dp</dimen>
+    <dimen name="search_hot_ml">16dp</dimen>
+    <dimen name="hot_search_tl_history_mt">22dp</dimen>
+    <dimen name="hot_search_tl_history_mb">17dp</dimen>
+    <dimen name="search_result_ll_ml">16dp</dimen>
+    <dimen name="hot_search_tl_hot_search_ts">12sp</dimen>
+    <dimen name="rambling_set_tv_order_ml">5dp</dimen>
+    <dimen name="rambling_set_tv_order_mr">17dp</dimen>
+    <dimen name="home_rambling_set_more_recycler_view_mr">17dp</dimen>
+    <dimen name="rambling_set_more_mb">9dp</dimen>
+    <dimen name="rambling_set_square_ll_pl">10dp</dimen>
+    <dimen name="rambling_set_square_ll_pr">25dp</dimen>
+    <dimen name="rambling_set_square_ll_mt">8dp</dimen>
+    <dimen name="rambling_set_more_ll_time_mt">8dp</dimen>
+    <dimen name="rambling_set_more_ll_time_mb">8dp</dimen>
+    <dimen name="rambling_set_more_tv_progress_ml">5dp</dimen>
+    <dimen name="rambling_set_more_iv_play_mr">15dp</dimen>
+    <dimen name="rambling_set_more_rl_ml">26dp</dimen>
+    <dimen name="rambling_set_more_rl_mt">16dp</dimen>
+    <dimen name="rambling_set_more_rl_mb">16dp</dimen>
+    <dimen name="course_explain_ll_ml">16dp</dimen>
+    <dimen name="course_explain_ll_mr">16dp</dimen>
+    <dimen name="course_explain_tv_title_mt">16dp</dimen>
+    <dimen name="course_explain_tv_author_mt">14dp</dimen>
+    <dimen name="course_explain_ll_player_ht">56dp</dimen>
+    <dimen name="course_explain_v_line_mt">9dp</dimen>
+    <dimen name="course_explain_v_line_mb">29dp</dimen>
+    <dimen name="course_detail_pb_progress_wd">75dp</dimen>
+    <dimen name="course_detail_pb_progress_ht">7dp</dimen>
+    <dimen name="course_detail_pb_progress_ml">7dp</dimen>
+    <dimen name="special_class_tv_time_mb">2dp</dimen>
+    <dimen name="single_class_ll_ml">8dp</dimen>
+    <dimen name="single_class_ll_mr">8dp</dimen>
+    <dimen name="course_detail_ll_introduction_pl">16dp</dimen>
+    <dimen name="course_detail_ll_introduction_mb">16dp</dimen>
+    <dimen name="course_detail_ll_introduction_mt">23dp</dimen>
+    <dimen name="course_detail_tv_introduction_ml">6dp</dimen>
+    <dimen name="course_detail_line_ht">12dp</dimen>
+    <dimen name="course_detail_line_mt">21dp</dimen>
+    <dimen name="course_outline_recycler_view_pl">36dp</dimen>
+    <dimen name="course_detail_course_outline_ll_mt">17dp</dimen>
+    <dimen name="course_detail_course_outline_ll_ml">18dp</dimen>
+    <dimen name="course_detail_ll_leave_word_mt">17dp</dimen>
+    <dimen name="course_detail_tv_leave_word_ml">17dp</dimen>
+    <dimen name="leave_word_recycler_view_pl">36dp</dimen>
+    <dimen name="course_detail_hint_mt">59dp</dimen>
+    <dimen name="course_detail_hint_mb">33dp</dimen>
+    <dimen name="course_outline_tv_order_ml">5dp</dimen>
+    <dimen name="course_outline_tv_order_mr">29dp</dimen>
+    <dimen name="course_detail_ll_ml">16dp</dimen>
+    <dimen name="course_detail_ll_mt">12dp</dimen>
+    <dimen name="course_detail_adapter_ll_ml">36dp</dimen>
+    <dimen name="course_detail_adapter_ll_mt">13dp</dimen>
+    <dimen name="course_detail_adapter_tv_title_ml">11dp</dimen>
+    <dimen name="course_detail_adapter_ll_time_mt">8dp</dimen>
+    <dimen name="course_detail_adapter_ll_time_mb">8dp</dimen>
+    <dimen name="course_detail_adapter_tv_speed_ml">7dp</dimen>
+    <dimen name="course_detail_adapter_iv_detail_ml">18dp</dimen>
+    <dimen name="course_detail_adapter_iv_detail_mr">16dp</dimen>
+    <dimen name="course_detail_ll_buy_ht">45dp</dimen>
+    <dimen name="course_detail_tv_progress_ml">2dp</dimen>
+    <dimen name="course_detail_ll_introduction_mt2">12dp</dimen>
+    <dimen name="course_detail_tv_leave_word_mb">25dp</dimen>
+    <dimen name="comment_ll_mb">50dp</dimen>
+    <dimen name="comment_iv_avatar_wd">39dp</dimen>
+    <dimen name="comment_iv_avatar_ht">39dp</dimen>
+    <dimen name="comment_iv_like_wd">21dp</dimen>
+    <dimen name="comment_iv_like_ht">21dp</dimen>
+    <dimen name="comment_iv_like_mr">10dp</dimen>
+    <dimen name="comment_tv_like_count_mr">17dp</dimen>
+    <dimen name="comment_tv_content_ml">36dp</dimen>
+    <dimen name="comment_tv_content_mr">17dp</dimen>
+    <dimen name="course_detail_comment_et_ht">193dp</dimen>
+
+</resources>

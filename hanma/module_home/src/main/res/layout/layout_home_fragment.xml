@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/search_title"
+        layout="@layout/layout_search_title" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@color/common_tv_transparent"
+        app:srlEnableAutoLoadMore="false"
+        app:srlEnableLoadMore="false"
+        app:srlEnablePreviewInEditMode="false"
+        app:srlPrimaryColor="@color/common_tv_transparent">
+
+        <com.scwang.smartrefresh.header.DeliveryHeader
+            android:id="@+id/fresh_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/home_nsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/home_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_banner_ht"
+                    app:indicator_height="@dimen/home_banner_ic_wd"
+                    app:indicator_width="@dimen/home_banner_ic_wd" />
+
+                <!--漫谈集-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/home_rambling_set_rl_pb"
+                    android:paddingTop="@dimen/home_rambling_set_rl_pt">
+
+                    <ImageView
+                        android:id="@+id/home_rambling_set_line"
+                        android:layout_width="@dimen/home_rambling_set_line_wd"
+                        android:layout_height="@dimen/home_rambling_set_title_line_ht"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/home_rambling_set_line_ml"
+                        android:background="@color/main_color" />
+
+                    <TextView
+                        android:id="@+id/home_rambling_set_title"
+                        style="@style/common_tv_black_3333333_ts_18"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/home_rambling_set_title_ml"
+                        android:layout_toRightOf="@+id/home_rambling_set_line"
+                        android:text="@string/home_rambling_set_title_tx" />
+
+                    <TextView
+                        android:id="@+id/home_rambling_set_more"
+                        style="@style/common_tv_gray_99999_ts_12"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/home_rambling_set_more_arrow"
+                        android:text="@string/more" />
+
+                    <ImageView
+                        android:id="@+id/home_rambling_set_more_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/home_rambling_set_more_arrow_ml"
+                        android:layout_marginRight="@dimen/home_rambling_set_more_arrow_mr"
+                        android:src="@mipmap/home_right_arrow" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home_rambling_set_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/home_rambling_set_recycler_view_ml"
+                    android:layout_marginRight="@dimen/home_rambling_set_recycler_view_ml"
+                    android:background="@drawable/radius_10_solid_white_no_stroke"
+                    android:elevation="@dimen/home_rambling_set_recycler_view_el" />
+                <!--单项课-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/home_rambling_set_rl_pt"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/home_single_class_line"
+                        android:layout_width="@dimen/home_rambling_set_line_wd"
+                        android:layout_height="@dimen/home_rambling_set_title_line_ht"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/home_rambling_set_line_ml"
+                        android:background="@color/main_color" />
+
+                    <TextView
+                        android:id="@+id/home_single_class_title"
+                        style="@style/common_tv_black_3333333_ts_18"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/home_rambling_set_title_ml"
+                        android:layout_toRightOf="@+id/home_single_class_line"
+                        android:text="@string/home_single_class" />
+
+                    <TextView
+                        android:id="@+id/home_single_class_more"
+                        style="@style/common_tv_gray_99999_ts_12"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/home_single_class_more_arrow"
+                        android:text="@string/more" />
+
+                    <ImageView
+                        android:id="@+id/home_single_class_more_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/home_rambling_set_more_arrow_ml"
+                        android:layout_marginRight="@dimen/home_rambling_set_more_arrow_mr"
+                        android:src="@mipmap/home_right_arrow" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home_single_class_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/home_rambling_set_recycler_view_ml"
+                    android:layout_marginRight="@dimen/home_rambling_set_recycler_view_ml"
+                    android:paddingTop="@dimen/single_class_recycler_view_pt" />
+
+                <!--专题课-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/home_rambling_set_rl_pb"
+                    android:paddingTop="@dimen/home_rambling_set_rl_pt">
+
+                    <ImageView
+                        android:id="@+id/home_special_class_line"
+                        android:layout_width="@dimen/home_rambling_set_line_wd"
+                        android:layout_height="@dimen/home_rambling_set_title_line_ht"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/home_rambling_set_line_ml"
+                        android:background="@color/main_color" />
+
+                    <TextView
+                        android:id="@+id/home_special_class_title"
+                        style="@style/common_tv_black_3333333_ts_18"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/home_rambling_set_title_ml"
+                        android:layout_toRightOf="@+id/home_special_class_line"
+                        android:text="@string/home_special_class_title_tx" />
+
+                    <TextView
+                        android:id="@+id/home_special_class_more"
+                        style="@style/common_tv_gray_99999_ts_12"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/home_special_class_more_arrow"
+                        android:text="@string/more" />
+
+                    <ImageView
+                        android:id="@+id/home_special_class_more_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/home_rambling_set_more_arrow_ml"
+                        android:layout_marginRight="@dimen/home_rambling_set_more_arrow_mr"
+                        android:src="@mipmap/home_right_arrow" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home_special_class_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/home_rambling_set_recycler_view_ml"
+                    android:layout_marginRight="@dimen/home_rambling_set_recycler_view_ml"
+                    android:paddingBottom="8dp"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:id="@+id/fresh_foot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

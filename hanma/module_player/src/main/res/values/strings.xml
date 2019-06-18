@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">module_player</string>
+    <string name="play_error">播放错误</string>
+</resources>

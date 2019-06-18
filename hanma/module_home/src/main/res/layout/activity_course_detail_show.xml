@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course_detail_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:context=".view.CourseDetailShowActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_base_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/course_detail_ll_ml"
+                android:layout_marginTop="@dimen/course_detail_ll_mt"
+                android:layout_marginBottom="@dimen/special_class_mb"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/course_detail_iv_img"
+                    android:layout_width="@dimen/special_class_iv_img_wd"
+                    android:layout_height="@dimen/special_class_iv_img_ht" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/special_class_ll_ml"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <wenran.com.baselibrary.base.widget.NoPaddingTv
+                        android:id="@+id/course_detail_tv_title"
+                        style="@style/common_tv_black_333333_ts_15"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/course_detail_tv_author"
+                        style="@style/common_tv_tc_66666_sz_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/course_detail_tv_title"
+                        android:layout_marginBottom="@dimen/course_detail_tv_introduction_ml"
+                        android:lines="1" />
+
+                    <TextView
+                        android:id="@+id/course_detail_tv_time"
+                        style="@style/common_tv_gray_99999_ts_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/course_detail_tv_author"
+                        android:lines="1" />
+
+                    <wenran.com.baselibrary.base.widget.NoPaddingTv
+                        android:id="@+id/course_detail_tv_sale_num"
+                        style="@style/common_tv_gray_99999_tsl_11"
+                        android:layout_below="@+id/course_detail_tv_time"
+                        android:layout_alignBottom="@+id/special_class_tv_price"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/course_detail_ll_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/course_detail_tv_time"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/common_tv_gray_99999_ts_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/course_detail_tv_tx" />
+
+                        <ProgressBar
+                            android:id="@+id/course_detail_pb_progress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="@dimen/course_detail_pb_progress_wd"
+                            android:layout_height="@dimen/course_detail_pb_progress_ht"
+                            android:layout_marginLeft="@dimen/course_detail_pb_progress_ml"
+                            android:background="@color/standard_tv_white_ffffff"
+                            android:progress="77"
+                            android:progressBackgroundTint="@color/common_tv_tc_yellow_ffa632" />
+
+                        <TextView
+                            android:id="@+id/course_detail_tv_progress"
+                            style="@style/common_tc_ff943d_ts_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/course_detail_tv_progress_ml"
+                            android:text="222" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--课程介绍模块-->
+            <LinearLayout
+                android:id="@+id/course_detail_ll_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/course_detail_ll_introduction_pl"
+                    android:paddingRight="@dimen/course_detail_ll_introduction_pl">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/course_detail_ll_introduction_mt2"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/course_detail_ll_introduction_mb"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/introduction" />
+
+                            <TextView
+                                style="@style/common_tv_black_333333_ts_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/course_detail_tv_introduction_ml"
+                                android:text="@string/course_detail_tv_introduction_tv" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/course_detail_tv_introduction"
+                            style="@style/common_tv_black_333333_ts_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="课程简介内容" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/course_detail_ll_introduction_mt"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/course_detail_ll_introduction_mb"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/intended_population" />
+
+                            <TextView
+                                style="@style/common_tv_black_333333_ts_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/course_detail_tv_introduction_ml"
+                                android:text="@string/course_detail_tv_intended_population_tx" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/course_detail_tv_intended_population"
+                            style="@style/common_tv_black_333333_ts_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="适应人群内容" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/course_detail_ll_introduction_mt"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/course_detail_ll_introduction_mb"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/subscription_notice" />
+
+                            <TextView
+                                style="@style/common_tv_black_333333_ts_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/course_detail_tv_introduction_ml"
+                                android:text="@string/course_detail_tv_subscription_notice_tv" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/course_detail_tv_subscription_notice"
+                            style="@style/common_tv_black_333333_ts_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订阅须知内容" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/course_detail_ll_introduction_mt"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/course_detail_ll_introduction_mb"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/remark" />
+
+                            <TextView
+                                style="@style/common_tv_black_333333_ts_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/course_detail_tv_introduction_ml"
+                                android:text="@string/course_detail_tv_remark_tx" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/course_detail_tv_remark"
+                            style="@style/common_tv_black_333333_ts_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="备注内容" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/course_detail_line_ht"
+                    android:layout_marginTop="@dimen/course_detail_line_mt"
+                    android:background="@color/line_bg_cl" />
+            </LinearLayout>
+
+
+            <!--课程大纲模块-->
+            <LinearLayout
+                android:id="@+id/course_detail_course_outline_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/course_detail_course_outline_ll_mt"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/course_detail_course_outline_ll_ml"
+                    android:layout_marginBottom="@dimen/course_detail_ll_introduction_mb"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/course_outline" />
+
+                    <TextView
+                        style="@style/common_tv_black_333333_ts_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/course_detail_tv_introduction_ml"
+                        android:layout_weight="1"
+                        android:text="@string/course_outline_tx" />
+
+                    <LinearLayout
+                        android:id="@+id/course_outline_ll_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/course_outline_iv_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/rambling_set_order_desc" />
+
+                        <TextView
+                            android:id="@+id/course_outline_tv_order"
+                            style="@style/common_tv_black_333333_ts_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/course_outline_tv_order_ml"
+                            android:layout_marginRight="@dimen/course_outline_tv_order_mr"
+                            android:text="@string/rambling_set_tv_order_desc_tx" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/course_outline_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/course_detail_line_ht"
+                    android:layout_marginTop="@dimen/course_detail_line_mt"
+                    android:background="@color/line_bg_cl" />
+            </LinearLayout>
+
+
+            <!--留言模块-->
+            <LinearLayout
+                android:id="@+id/course_detail_ll_leave_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/course_detail_ll_leave_word_mt"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/common_tv_black_333333_ts_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/course_detail_tv_leave_word_ml"
+                    android:layout_marginBottom="@dimen/course_detail_tv_leave_word_mb"
+                    android:text="@string/course_detail_ll_leave_word_tx" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/leave_word_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:paddingRight="@dimen/course_detail_ll_introduction_pl" />
+
+                <TextView
+                    style="@style/common_tv_tc_66666_sz_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/course_detail_hint_mt"
+                    android:layout_marginBottom="@dimen/course_detail_hint_mb"
+                    android:text="@string/course_detail_hint_tx" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+    <include
+        layout="@layout/layout_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:id="@+id/course_detail_ll_buy"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/course_detail_ll_buy_ht"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/course_detail_tv_price"
+            style="@style/common_tv_black_3333333_ts_18"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffcacaca"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/course_detail_tv_buy"
+            style="@style/common_tv_white_ffffff_ts_18"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffff8c2e"
+            android:gravity="center"
+            android:text="立即购买" />
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

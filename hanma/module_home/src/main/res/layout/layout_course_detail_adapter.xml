@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/course_detail_adapter_ll_ml"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/course_detail_adapter_ll_mt"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/course_detail_adapter_tv_title"
+                    style="@style/common_tv_black_333333_ts_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="课程" />
+
+                <TextView
+                    android:id="@+id/course_detail_adapter_tv_free"
+                    style="@style/common_tv_red_F8091F_ts_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/course_detail_adapter_tv_title_ml"
+                    android:text="@string/course_detail_adapter_tv_title_tx" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/course_detail_adapter_ll_time_mt"
+                android:layout_marginBottom="@dimen/course_detail_adapter_ll_time_mb"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/course_detail_adapter_tv_time"
+                    style="@style/common_tv_gray_99999_ts_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时长" />
+
+                <TextView
+                    android:id="@+id/course_detail_adapter_tv_speed"
+                    style="@style/common_tv_gray_99999_ts_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/course_detail_adapter_tv_speed_ml"
+                    android:text="已学" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/course_detail_adapter_iv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/course_detail_play" />
+
+            <ImageView
+                android:id="@+id/course_detail_adapter_iv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/course_detail_adapter_iv_detail_ml"
+                android:layout_marginRight="@dimen/course_detail_adapter_iv_detail_mr"
+                android:src="@mipmap/course_detail_detail" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_bg_cl" />
+</LinearLayout>

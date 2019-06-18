@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--common-->
+    <dimen name="common_text_size">18dp</dimen>
+    <dimen name="common_tv_gray_wd">130dp</dimen>
+    <dimen name="common_tv_gray_ht">32dp</dimen>
+    <dimen name="common_tv_ts_10">10sp</dimen>
+    <dimen name="common_tv_ts_11">11sp</dimen>
+    <dimen name="common_tv_ts_12">12sp</dimen>
+    <dimen name="common_tv_ts_14">14sp</dimen>
+    <dimen name="common_tv_ts_15">15sp</dimen>
+    <dimen name="common_tv_ts_16">16sp</dimen>
+    <dimen name="common_tv_ts_18">18sp</dimen>
+    <dimen name="common_tv_ts_20">20sp</dimen>
+    <dimen name="common_tv_ts_21">21sp</dimen>
+    <dimen name="common_tv_ts_24">24sp</dimen>
+
+    <!--player-->
+    <dimen name="player_iv_cancel_ml">8dp</dimen>
+    <dimen name="player_ll_content_ml">8dp</dimen>
+    <dimen name="player_iv_img_wd">50dp</dimen>
+    <dimen name="player_iv_img_ht">50dp</dimen>
+    <dimen name="player_ll_title_ml">10dp</dimen>
+    <dimen name="player_iv_fast_backward_ml">20dp</dimen>
+    <dimen name="player_iv_play_or_pause_ml">7dp</dimen>
+    <dimen name="player_iv_play_or_pause_mr">7dp</dimen>
+    <dimen name="player_iv_speed_mr">7dp</dimen>
+</resources>
